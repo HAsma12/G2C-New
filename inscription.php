@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Utiliser la fonction mail() de PHP (fonctionne sur InfinityFree)
         $mail->isMail();
 
-        $mail->setFrom('noreply@gc.kesug.com', 'Formulaire G2C'); // Doit être un email de TON domaine
-        $mail->addAddress('TON_EMAIL@gmail.com'); // Où tu veux recevoir l'inscription
+        $mail->setFrom('hasniasma742@gmail.com', 'Formulaire G2C');
+        $mail->addAddress('hasniasma742@gmail.com');
 
         $mail->Subject = "Nouvelle inscription";
         $mail->Body = "Nom: $nom\nPrénom: $prenom\nTéléphone: $telephone\nFormations: $formations";
